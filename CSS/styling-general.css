@@ -1,46 +1,75 @@
-body{
-	background-color: #f2f2f2;
-	margin: 2%;
+/*Debug: Show box borders to help design page*/
+*{
+	/*border: 1px solid black;*/
+	box-sizing: border-box;
 }
-
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: #f2f2f2
+}
 header{
-	background-color: #808080;
-	border-width: 1px;
-	border-style: solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	height: 80px;
+	background-color: #333333;
+	color: #ffffff;
 }
 h1{
+	font-size: 25px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+.sidenav{
+	display: block;
+	position: fixed;
+	height: 100%;
+	width: 220px;
+	z-index: 1;
+	top: 80px;
+	left: 0;
+	background-color: #666666;
+}
+.sidenav a{
+	display: block;
+	text-decoration: none;
 	color: #ffffff;
-	text-transform: uppercase;
-	text-align: center;
+	padding: 15px;
 }
-nav{
-	background-color: #e6e6e6;
-	text-align: center;
-	border-width: 1px;
-	border-style: solid;
-	margin: 15px;
+.sidenav a:hover{
+	font-weight: bold;
+	background-color: #000000;
 }
-a{
-	display: inline-block;
-	border-width: 1px;
-	border-style: solid;
-	margin: 10px 30px;
-	padding: 5px;
+.active{
+	background-color: #999999;
+	font-weight: bold;
 }
 section{
-	display: inline-block;
-	width: 29%;
-	margin: 2%;
-	float: left;
-	background: #e6e6e6;
-	border-width: 1px;
-	border-style: solid;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 220px;
 }
 h2{
-	color: #000000;
+	padding: 15px 15px 15px 15px;
+	margin: 0;
 }
-footer{
-	border-width: 1px;
-	border-style: solid;
-	clear: both;
+p{
+	padding: 0px 15px 0px 15px;
+	margin: 0;
+	line-height: 1.5;
+}
+.imgcontainer{
+	padding: 15px;
+	margin: 0px 0px 0px 220px
+}
+img{
+	padding: 15px;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	max-width: 75%;
+	height: auto;
 }
